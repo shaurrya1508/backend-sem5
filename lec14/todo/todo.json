@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "title": "Learn JavaScript",
+        "description": "Complete the JavaScript tutorial and practice exercises"
+    },
+    {
+        "id": 2,
+        "title": "Build Todo App",
+        "description": "Create a simple todo application with HTML, CSS, and JavaScript"
+    },
+    {
+        "id": 3,
+        "title": "Read Node.js Documentation",
+        "description": "Study Express.js framework and file system operations"
+    }
+]
