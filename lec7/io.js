@@ -5,7 +5,8 @@ function read(file){
             if (err) {
                 reject(err);
             } else {
-                resolve(JSON.parse(data));
+                if(data)resolve(JSON.parse(data));
+                else resolve();
             }
         });
     });
@@ -14,11 +15,11 @@ function read(file){
 
 function write(file,data){
     return new Promise((resolve, reject) => {  
-        fs.writeFile(file, JSON.stringify(data), (err) => {
+        fs.writeFile(file, data, (err) => {
             if (err) {
                 reject(err);
             } else {
-                resolve();
+                resolve("Done writing");
             }
         });
     });

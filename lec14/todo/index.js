@@ -16,7 +16,6 @@ async function loadTodos() {
             li.innerHTML = `
                 <h3>${todo.title}</h3>
                 <p>${todo.description}</p>
-                <small>ID: ${todo.id}</small>
             `;
             todosList.appendChild(li);
         });
@@ -26,29 +25,30 @@ async function loadTodos() {
 }
 
 // Function to add new todo
-async function addTodo(title, description) {
-    try {
-        const response = await fetch('http://localhost:5000/todos', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ title, description })
-        });
+// async function addTodo(title, description) {
+//     try {
+//         const response = await fetch('http://localhost:5000/todos', {
+//             method: 'POST',
+//             headers: {
+//                 'Content-Type': 'application/json'
+//             },
+//             body: JSON.stringify({ title, description })
+//         });
         
-        if (response.ok) {
-            console.log('Todo added successfully');
-            form.reset(); // Clear the form
-            loadTodos(); // Reload todos
-        } else {
-            console.error('Error adding todo');
-        }
-    } catch (error) {
-        console.error('Error adding todo:', error);
-    }
-}
+//         if (response.ok) {
+//             console.log('Todo added successfully');
+//             form.reset(); // Clear the form
+//             loadTodos(); // Reload todos
+//         } else {
+//             console.error('Error adding todo');
+//         }
+//     } catch (error) {
+//         console.error('Error adding todo:', error);
+//     }
+// }
 
 // Handle form submission
+
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "P001",
+    "name": "Laptop"
+  },
+  {
+    "id": "P002",
+    "name": "Smartphone"
+  },
+  {
+    "id": "P003",
+    "name": "Tablet"
+  },
+  {
+    "id": "P004",
+    "name": "Headphones"
+  },
+  {
+    "id": "P005",
+    "name": "Keyboard"
+  },
+  {
+    "id": "P006",
+    "name": "Mouse"
+  },
+  {
+    "id": "P007",
+    "name": "Smartwatch"
+  },
+  {
+    "id": "P008",
+    "name": "Printer"
+  },
+  {
+    "id": "P009",
+    "name": "Webcam"
+  },
+  {
+    "id": "P010",
+    "name": "Router"
+  }
+]

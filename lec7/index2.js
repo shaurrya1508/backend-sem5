@@ -11,7 +11,7 @@
 // });});
 
 const {read,write} = require("./io");   
-
+ 
 read("text.txt")
     .then(data => {
         return read("text2.txt").then(data2 => {
