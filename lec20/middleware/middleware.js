@@ -14,8 +14,7 @@ function m2(req,res,next){
 function checkAdmin(req, res, next) {
     console.log("running checkAdmin middleware");
     let{name}=req.query;
-    if (name === "shaurya") {
-        req.isAdmin=true;
+    if (name === "") {
         return next();
     };
 }
@@ -26,4 +25,3 @@ res.json({
 
 module.exports.m1 = m1;
 module.exports.m2 = m2;
-module.exports.checkAdmin = checkAdmin
